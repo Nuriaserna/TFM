@@ -40,7 +40,7 @@ print(paste("   H1 Variants Filenames: ",opt$fileh1))
 print(paste("   H1 Variants Names: ",opt$nameh1))
 
 #--- Constants Storage --------------------------------------------------------------------------------------------------------------------------------------
-load("/home/andrea/Bioinformatica_NÃºria/R_Scripts/GnegGposGroups.Rdata")
+load("/home/andrea/Bioinformatica_Núria/R_Scripts/GnegGposGroups.Rdata")
 Bands_Studied <- "Gpos&Gneg"
 CytoBands <- c("Gneg1","Gneg2","Gneg3","Gneg4","Gpos25","Gpos50","Gpos75","Gpos100")
 Bands_Colors <- c("Gneg1"="#b3d9ff","Gneg2"="#99e699","Gneg3"="#ffccb3","Gneg4"="#e59acc",
@@ -58,10 +58,10 @@ dir.create(paste(HistonesDir, CellLine,"_Results",sep=""), showWarnings = FALSE)
 ResultsDir <-paste(HistonesDir, CellLine,"_Results",sep="")
 
 #--- Scripts Calling ----------------------------------------------------------------------------------------------------------------------------------------
-source("/home/andrea/Bioinformatica_NÃºria/R_Scripts/TFM/TFM_Reading_PTMs&CRs_H1Variants_Files.R")
-source("/home/andrea/Bioinformatica_NÃºria/R_Scripts/TFM/TFM_PTMs&CRs_Abundance_CytoBands.R")
-source("/home/andrea/Bioinformatica_NÃºria/R_Scripts/TFM/TFM_H1_Abundance_CytoBands.R")
-source("/home/andrea/Bioinformatica_NÃºria/R_Scripts/TFM/TFM_H1s_Correlations.R")
-source("/home/andrea/Bioinformatica_NÃºria/R_Scripts/TFM/TFM_CorrelationFactors_PTMs_vs_H1s.R")
+source("/home/andrea/Bioinformatica_Núria/R_Scripts/TFM/TFM_Reading_PTMs&CRs_H1Variants_Files.R")
+source("/home/andrea/Bioinformatica_Núria/R_Scripts/TFM/TFM_PTMs&CRs_Abundance_CytoBands.R")
+source("/home/andrea/Bioinformatica_Núria/R_Scripts/TFM/TFM_H1_Abundance_CytoBands.R")
+source("/home/andrea/Bioinformatica_Núria/R_Scripts/TFM/TFM_H1s_Correlations.R")
+source("/home/andrea/Bioinformatica_Núria/R_Scripts/TFM/TFM_CorrelationFactors_PTMs_vs_H1s.R")
 
 #############################################################################################################################################################
